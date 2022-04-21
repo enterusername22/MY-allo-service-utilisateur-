@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/message_user"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:text="He"
+                android:maxLength="2"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@drawable/circle"
+                android:layout_height="wrap_content"
+                tools:ignore="RtlCompat" />
+
+            <com.github.library.bubbleview.BubbleTextView
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/message_user"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:id="@+id/message_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                app:arrowWidth="8dp"
+                app:angle="8dp"
+                android:text="Hi How are you friends"
+                app:arrowHeight="10dp"
+                app:arrowPosition="14dp"
+                app:arrowLocation="left"
+                app:bubbleColor="@color/colorPrimary"
+                app:arrowCenter="true"
+                tools:ignore="RtlCompat"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="70dp">
+
+            <TextView
+                android:layout_alignParentEnd="true"
+                android:id="@+id/textmsglabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="RtlCompat"
+                android:text="Sent at"
+                android:textSize="12sp"
+                android:layout_marginRight="6dp"/>
+
+            <TextView
+                android:layout_alignParentBottom="@+id/message_user"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/message_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="RtlCompat"
+                android:textSize="12sp"
+                android:textStyle="italic"
+                android:text="12:00"/>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

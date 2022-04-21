@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="60dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+
+      <!--<EditText-->
+        <!--android:id="@+id/search_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="35dp"-->
+        <!--android:background="@drawable/search_bar"-->
+        <!--android:hint="Search"-->
+        <!--android:imeOptions="actionSearch"-->
+        <!--android:inputType="text"-->
+        <!--android:maxLines="1"-->
+        <!--android:textSize="11sp"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:paddingTop="10dp"-->
+        <!--android:singleLine="true"-->
+        <!--android:drawableRight="@drawable/ic_search_black_24dp"-->
+        <!--android:textColor="@color/lightgrey"-->
+        <!--android:textColorHint="@color/lightgrey"-->
+       <!--/>-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="50dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

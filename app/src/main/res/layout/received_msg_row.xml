@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/padding_small"
+    android:paddingEnd="@dimen/padding_avg"
+    android:paddingStart="@dimen/padding_avg"
+    android:paddingTop="@dimen/padding_small">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/descMSg"
+        android:layout_marginStart="@dimen/margin_huge"
+        android:layout_toStartOf="@+id/RecivernAme"
+        android:layout_marginLeft="@dimen/margin_huge"
+        android:layout_toLeftOf="@+id/RecivernAme">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chat_round_rect_receive"
+            android:orientation="vertical"
+            android:layout_marginBottom="5dp"
+            >
+            <TextView
+                android:id="@+id/chatMsgTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_small"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                tools:text="Noice man !" />
+            <TextView
+                android:id="@+id/DateMsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Nov 28"
+                android:textColor="@color/white"
+                android:textSize="11sp"
+                android:textStyle="italic"
+                tools:ignore="RtlCompat"
+                android:paddingLeft="5dp"
+                android:paddingBottom="5dp"
+
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/descMSg"
+        android:layout_toStartOf="@+id/RecivernAme"
+        android:layout_toLeftOf="@+id/RecivernAme">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="70dp">
+
+            <TextView
+                android:id="@+id/textmsglabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="RtlCompat"
+                android:text="Sent at"
+                android:textSize="10sp"
+                android:layout_marginRight="6dp"/>
+
+
+            <TextView
+                android:layout_alignParentBottom="@+id/message_user"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/Timemsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="RtlCompat"
+                android:textSize="10sp"
+                android:textStyle="italic"
+                android:text="12:00"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/RecivernAme"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/margin_avg"
+        android:background="@drawable/circle_receiver"
+        android:gravity="center"
+        android:maxEms="1"
+        android:textAllCaps="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:text="R"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/margin_avg" />
+
+
+</RelativeLayout>

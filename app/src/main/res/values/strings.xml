@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MY allo service (utilisateur)</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_home">Jobs</string>
+    <string name="title_dashboard">Profile</string>
+    <string name="title_notifications">Feedback</string>
+    <string name="title_activity_testing">testing</string>
+    <string name="title_activity_chat_messages">ChatMessagesActivity</string>
+</resources>

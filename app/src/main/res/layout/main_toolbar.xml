@@ -1,0 +1,91 @@
+<android.support.design.widget.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_main"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:theme="@style/MyCustomtool"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="6"
+            >
+
+            <TextView
+                android:id="@+id/buttonShowCustomDialog"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:background="@drawable/user_circle"
+                android:gravity="center"
+                android:maxEms="1"
+                android:maxLines="1"
+                android:maxLength="1"
+                android:textAllCaps="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:text="A"
+
+                />
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:orientation="vertical">
+
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/LastSeen"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Online"-->
+                        <!--android:textColor="@color/white"-->
+                        <!--android:textSize="11sp"-->
+                        <!--android:layout_weight="4"-->
+                        <!--android:gravity="left"-->
+                        <!--/>-->
+                    <!--<TextView-->
+                        <!--android:id="@+id/LastSeenTime"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text=""-->
+                        <!--android:textColor="@color/white"-->
+                        <!--android:textSize="11sp"-->
+                        <!--android:textStyle="italic"-->
+                        <!--android:layout_weight="4"-->
+                        <!--android:gravity="left"-->
+                        <!--/>-->
+
+
+                <!--</LinearLayout>-->
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+</android.support.design.widget.AppBarLayout>
